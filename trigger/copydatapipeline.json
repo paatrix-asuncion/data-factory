@@ -1,0 +1,25 @@
+{
+	"name": "copydatapipeline",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copydata2raw",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/curated/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8f91b5c8-e10f-4c66-9b72-663ae34fdcd6/resourceGroups/NetworkWatcherRG/providers/Microsoft.Storage/storageAccounts/patrixstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated",
+				"Microsoft.Storage.BlobDeleted"
+			]
+		}
+	}
+}

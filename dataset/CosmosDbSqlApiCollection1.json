@@ -1,0 +1,54 @@
+{
+	"name": "CosmosDbSqlApiCollection1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CosmosDb1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CosmosDbSqlApiCollection",
+		"schema": {
+			"type": "object",
+			"properties": {
+				"productid": {
+					"type": "string"
+				},
+				"category": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"price": {
+					"type": "string"
+				},
+				"shipping": {
+					"type": "object",
+					"properties": {
+						"weight": {
+							"type": "integer"
+						},
+						"dimensions": {
+							"type": "object",
+							"properties": {
+								"width": {
+									"type": "integer"
+								},
+								"length": {
+									"type": "integer"
+								},
+								"height": {
+									"type": "integer"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"typeProperties": {
+			"collectionName": "clothing"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "PatrixTraining",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "462eda34-b1bd-443e-ac96-0e317642e240",
+		"tenantId": "9bafe860-7ffc-4998-8d21-57e4f61e2a83"
+	}
+}
